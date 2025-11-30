@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVIP Premium Sulfur-Bio Egg Marketing Strategy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+        /* Chart Container Rules - Responsive & constrained */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Max width for readability */
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px; /* Default height */
+            max-height: 400px;
+        }
+
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+
+        /* Custom Scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d97706; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b45309; 
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        
+        .navy-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+        }
+    </style>
+    <!-- 
+        CONFIRMATION: 
+        1. NO SVG graphics are used in this file. 
+        2. NO Mermaid JS is used in this file.
+        3. All charts use Chart.js/Canvas.
+        4. Icons are Unicode or CSS shapes.
+    -->
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="navy-gradient text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-black tracking-tight text-amber-400">황금란 (Golden Egg)</h1>
+                <p class="text-sm md:text-base text-blue-200">VVIP 유황바이오 프리미엄 달걀 마케팅 전략</p>
+            </div>
+            <div class="hidden md:block text-right text-xs text-blue-200">
+                FDA 안전성 통과 (2019)<br>특허받은 제독 유황 기술
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 space-y-12">
+
+        <!-- SECTION 1: Introduction & Technology Credibility -->
+        <section id="introduction" class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white rounded-2xl shadow-md p-8">
+            <div>
+                <h2 class="text-3xl font-bold text-slate-800 mb-4 border-l-8 border-amber-500 pl-4">신뢰의 기술, 프리미엄의 시작</h2>
+                <p class="text-lg leading-relaxed mb-6">
+                    일반 사료가 아닌 <strong>유황·바이오 유효성분 사료</strong>를 급여하여 생산된 달걀은 단순한 식품을 넘어선 '건강 기능성 식품'입니다. 
+                    핵심은 광물성 유황의 독성을 완벽하게 제거하는 특허 기술에 있으며, 이는 국제적인 안전 기준을 충족했습니다.
+                </p>
+                <div class="bg-blue-50 border border-blue-100 rounded-lg p-4">
+                    <h3 class="font-bold text-blue-900 mb-2">💎 핵심 경쟁력 (Key Value)</h3>
+                    <ul class="list-disc list-inside space-y-2 text-slate-700">
+                        <li><strong>독성 제거:</strong> 특허 기술로 유황 독성 100% 제거</li>
+                        <li><strong>FDA 통과:</strong> 2019년 미국 FDA 안전성 테스트 완료</li>
+                        <li><strong>시설 등록:</strong> 국제 기준에 부합하는 생산 시설 확보</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Timeline Visualization (HTML/CSS) -->
+            <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 h-full flex flex-col justify-center">
+                <h3 class="text-xl font-bold text-center mb-6 text-slate-600">안전성 확보 로드맵</h3>
+                <div class="relative">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-amber-200"></div>
+                    
+                    <!-- Item 1 -->
+                    <div class="relative z-10 mb-8 flex items-center w-full">
+                        <div class="w-1/2 pr-8 text-right">
+                            <h4 class="font-bold text-amber-600">기술 개발 완료</h4>
+                            <p class="text-sm text-slate-500">특허 출원 및 제독 기술 확립</p>
+                        </div>
+                        <div class="w-8 h-8 rounded-full gold-gradient border-4 border-white shadow flex items-center justify-center text-white font-bold text-xs">1</div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative z-10 mb-8 flex items-center w-full">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="w-8 h-8 rounded-full gold-gradient border-4 border-white shadow flex items-center justify-center text-white font-bold text-xs">2</div>
+                        <div class="w-1/2 pl-8 text-left">
+                            <h4 class="font-bold text-blue-800">FDA 안전성 테스트</h4>
+                            <p class="text-sm text-slate-500">2019년 미국 FDA 기준 통과</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="relative z-10 flex items-center w-full">
+                        <div class="w-1/2 pr-8 text-right">
+                            <h4 class="font-bold text-amber-600">프리미엄 시장 진입</h4>
+                            <p class="text-sm text-slate-500">백화점 및 VVIP 마켓 런칭</p>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-blue-800 border-4 border-white shadow flex items-center justify-center text-white font-bold text-xs">3</div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Target Market Analysis -->
+        <section class="bg-white rounded-2xl shadow-md p-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-2">🎯 타겟 시장 분석 (Targeting Strategy)</h2>
+            <p class="text-slate-600 mb-8">
+                '황금란'은 일반 대중 시장이 아닌, 건강 관리에 투자를 아끼지 않는 <strong>고소득층(High Net Worth)</strong>과 
+                면역력 강화가 필수적인 <strong>환자식(Medical Food)</strong> 시장을 집중 공략하여 높은 마진을 확보합니다.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Chart 1: Market Segmentation -->
+                <div class="flex flex-col items-center">
+                    <h3 class="text-lg font-semibold text-slate-700 mb-4">예상 타겟 고객 구성비</h3>
+                    <div class="chart-container">
+                        <canvas id="marketSegmentChart"></canvas>
+                    </div>
+                    <p class="text-sm text-slate-500 mt-4 text-center">
+                        백화점 명품관 고객과 환자식 수요가 전체의 70% 이상을 차지할 것으로 예상됩니다.
+                    </p>
+                </div>
+
+                <!-- Text Description of Segments -->
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-amber-100 p-3 rounded-lg mr-4 text-2xl">👑</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-slate-800">VVIP & 고소득층</h4>
+                            <p class="text-slate-600">가격 탄력성이 낮고 가치 소비를 지향합니다. '최고급', '한정판', '검증된 안전성' 키워드에 반응하며 선물용 수요가 높습니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4 text-2xl">🏥</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-slate-800">환자식 & 실버 케어</h4>
+                            <p class="text-slate-600">암 환자, 회복기 환자 등 면역력과 고단백 식단이 필수적인 그룹입니다. 유황 바이오 성분의 기능성을 중시합니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4 text-2xl">🎁</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-slate-800">프리미엄 기프트</h4>
+                            <p class="text-slate-600">명절, 기업 임원 선물 등 특별한 날을 위한 고가의 선물 세트 수요입니다. 패키징 디자인이 구매의 핵심입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Distribution & Revenue Model -->
+        <section class="bg-white rounded-2xl shadow-md p-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6">📊 유통 채널 및 수익 구조</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Channel Strategy Text -->
+                <div>
+                    <p class="mb-6 leading-relaxed">
+                        세 가지 핵심 채널(백화점, 폐쇄몰, D2C)을 통해 브랜드 가치를 훼손하지 않으면서 수익성을 극대화합니다.
+                        특히 D2C 구독 모델은 안정적인 현금 흐름을 창출합니다.
+                    </p>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="border-l-4 border-slate-800 bg-slate-50 p-4">
+                            <h4 class="font-bold">1. 백화점 명품관 (Branding)</h4>
+                            <p class="text-sm">신세계, 현대백화점 식품관 입점. '프리미엄 브랜드' 이미지 구축의 전초기지.</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 bg-blue-50 p-4">
+                            <h4 class="font-bold">2. 폐쇄형 복지몰 (Volume)</h4>
+                            <p class="text-sm">대기업/공무원 몰. 임직원 전용 특판으로 대량 판매 유도.</p>
+                        </div>
+                        <div class="border-l-4 border-amber-500 bg-amber-50 p-4">
+                            <h4 class="font-bold">3. D2C 정기 구독 (Retention)</h4>
+                            <p class="text-sm">산란 후 24시간 내 직배송. 유통 마진을 제거하여 수익성 최고.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chart 2: Projected Revenue by Channel -->
+                <div class="flex flex-col items-center">
+                    <h3 class="text-lg font-semibold text-slate-700 mb-4">채널별 예상 매출 비중 및 마진율</h3>
+                    <div class="chart-container">
+                        <canvas id="channelRevenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: Marketing 4P Mix -->
+        <section class="bg-slate-800 text-white rounded-2xl shadow-xl p-8 overflow-hidden relative">
+            <!-- Decorative circle -->
+            <div class="absolute -top-20 -right-20 w-64 h-64 bg-amber-500 rounded-full opacity-20 blur-3xl"></div>
+
+            <h2 class="text-2xl font-bold text-amber-400 mb-8 relative z-10">🚀 마케팅 4P 실행 전략</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+                <!-- Product -->
+                <div class="bg-slate-700 p-6 rounded-xl hover:bg-slate-600 transition duration-300">
+                    <div class="text-3xl mb-4">🥚</div>
+                    <h3 class="text-xl font-bold mb-2">Product</h3>
+                    <ul class="text-sm space-y-2 text-slate-300">
+                        <li>• 유황/바이오 유효성분</li>
+                        <li>• 무항생제, HACCP</li>
+                        <li>• 난각번호 1번(방사) 지향</li>
+                        <li>• 블랙&골드 럭셔리 패키지</li>
+                    </ul>
+                </div>
+
+                <!-- Price -->
+                <div class="bg-slate-700 p-6 rounded-xl hover:bg-slate-600 transition duration-300">
+                    <div class="text-3xl mb-4">💎</div>
+                    <h3 class="text-xl font-bold mb-2">Price</h3>
+                    <ul class="text-sm space-y-2 text-slate-300">
+                        <li>• 고가 프레스티지 전략</li>
+                        <li>• 1알당 1,500원~2,000원 대</li>
+                        <li>• 선물세트 5~10만원 대 구성</li>
+                        <li>• 구독 시 10% 할인 혜택</li>
+                    </ul>
+                </div>
+
+                <!-- Place -->
+                <div class="bg-slate-700 p-6 rounded-xl hover:bg-slate-600 transition duration-300">
+                    <div class="text-3xl mb-4">🏬</div>
+                    <h3 class="text-xl font-bold mb-2">Place</h3>
+                    <ul class="text-sm space-y-2 text-slate-300">
+                        <li>• 오프라인: 백화점 식품관</li>
+                        <li>• 온라인: 자사몰(구독)</li>
+                        <li>• 모바일: 폐쇄몰 앱</li>
+                        <li>• <strong>콜드체인 새벽배송</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Promotion -->
+                <div class="bg-slate-700 p-6 rounded-xl hover:bg-slate-600 transition duration-300">
+                    <div class="text-3xl mb-4">📢</div>
+                    <h3 class="text-xl font-bold mb-2">Promotion</h3>
+                    <ul class="text-sm space-y-2 text-slate-300">
+                        <li>• VIP 초청 시식회</li>
+                        <li>• 건강 전문 인플루언서 리뷰</li>
+                        <li>• FDA 인증서 강조 마케팅</li>
+                        <li>• '황금란' 스토리텔링</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">© 2025 BMP판매법인.</p>
+            <p class="text-xs">본 자료의 무단복제 및 상업행위에 사용하는 것을 엄격히 제한합니다.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- 1. Global Chart Settings ---
+        Chart.defaults.font.family = "'Noto Sans KR', sans-serif";
+        Chart.defaults.color = '#64748b';
+        
+        // --- 2. Label Wrapping Logic (Critical Requirement) ---
+        function formatLabel(str, maxwidth) {
+            if (typeof str !== 'string') return str;
+            const sections = [];
+            const words = str.split(" ");
+            let temp = "";
+
+            words.forEach(function(item, index) {
+                if (temp.length > 0) {
+                    const concat = temp + ' ' + item;
+                    if (concat.length > maxwidth) {
+                        sections.push(temp);
+                        temp = "";
+                    } else {
+                        if (index === (words.length - 1)) {
+                            sections.push(concat);
+                            return;
+                        } else {
+                            temp = concat;
+                            return;
+                        }
+                    }
+                }
+                if (index === (words.length - 1)) {
+                    sections.push(item);
+                    return;
+                }
+                if (item.length < maxwidth) {
+                    temp = item;
+                } else {
+                    sections.push(item);
+                }
+            });
+            return sections;
+        }
+
+        // --- 3. Tooltip Configuration (Critical Requirement) ---
+        const commonTooltipOptions = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        // --- 4. Chart Generation ---
+
+        // Chart 1: Market Segmentation (Doughnut)
+        const ctxMarket = document.getElementById('marketSegmentChart').getContext('2d');
+        new Chart(ctxMarket, {
+            type: 'doughnut',
+            data: {
+                labels: [
+                    formatLabel("VVIP & 고소득층 (백화점)", 16),
+                    formatLabel("환자식 및 건강관리 (치료식)", 16),
+                    formatLabel("프리미엄 선물 수요 (명절/행사)", 16),
+                    formatLabel("일반 웰빙 소비자", 16)
+                ],
+                datasets: [{
+                    data: [40, 30, 20, 10],
+                    backgroundColor: [
+                        '#d97706', // Amber-600 (Gold)
+                        '#10b981', // Emerald-500 (Health)
+                        '#1e3a8a', // Blue-900 (Gift)
+                        '#94a3b8'  // Slate-400 (General)
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            usePointStyle: true,
+                            padding: 20
+                        }
+                    },
+                    tooltip: commonTooltipOptions
+                }
+            }
+        });
+
+        // Chart 2: Channel Revenue & Margin (Bar/Line Combo)
+        const ctxChannel = document.getElementById('channelRevenueChart').getContext('2d');
+        new Chart(ctxChannel, {
+            type: 'bar',
+            data: {
+                labels: [
+                    formatLabel("백화점 명품관", 16), 
+                    formatLabel("폐쇄형 복지몰", 16), 
+                    formatLabel("D2C 정기 구독", 16)
+                ],
+                datasets: [
+                    {
+                        label: '예상 매출 비중 (%)',
+                        data: [25, 35, 40],
+                        backgroundColor: '#d97706',
+                        borderRadius: 6,
+                        order: 2
+                    },
+                    {
+                        label: '영업 이익률 (%)',
+                        data: [15, 20, 45], // D2C margin is highest
+                        borderColor: '#1e3a8a',
+                        backgroundColor: '#1e3a8a',
+                        type: 'line',
+                        tension: 0.3,
+                        borderWidth: 3,
+                        pointBackgroundColor: '#fff',
+                        pointBorderColor: '#1e3a8a',
+                        pointRadius: 5,
+                        yAxisID: 'y1',
+                        order: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                scales: {
+                    x: {
+                        grid: { display: false }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: '#e2e8f0' },
+                        display: true,
+                        title: { display: true, text: '매출 비중' }
+                    },
+                    y1: {
+                        beginAtZero: true,
+                        position: 'right',
+                        grid: { display: false },
+                        title: { display: true, text: '이익률' }
+                    }
+                },
+                plugins: {
+                    legend: { position: 'top' },
+                    tooltip: commonTooltipOptions
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
